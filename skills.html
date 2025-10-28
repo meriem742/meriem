@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills - Mimi Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f7f3ef;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      color: #f472b6;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 25px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #f472b6;
+    }
+
+    /* 🌸 Skills Section */
+    .skills-section {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .skills-section h2 {
+      color: #f472b6;
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .skill-box {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 8px 8px 15px #dcd6d1, -8px -8px 15px #ffffff;
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .skill-box h3 {
+      color: #f472b6;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .skill-box p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* 💗 Footer-like text */
+    .end-text {
+      text-align: center;
+      font-size: 15px;
+      color: #888;
+      margin-top: 60px;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+      }
+
+      .skills-section h2 {
+        font-size: 32px;
+      }
+
+      .skill-box {
+        width: 150px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 28px;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 6px 10px;
+      }
+
+      .skills-section h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body class="skills-body">
+  <header class="minimal-header">
+    <div class="logo">Mery<span class="dot">.</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="tp.html">Projects</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h1 class="bubblegum-title">My Skills</h1>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>HTML & CSS</h3>
+        <p>Building beautiful and responsive websites.</p>
+      </div>
+      <div class="skill-box">
+        <h3>JavaScript</h3>
+        <p>Interactive web experiences and dynamic pages.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Python</h3>
+        <p>Backend logic and scripting.</p>
+      </div>
+      <div class="skill-box">
+        <h3>UI/UX Design</h3>
+        <p>Creating modern and user-friendly interfaces.</p>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
